@@ -1,0 +1,19 @@
+.Root {
+  flex-grow: 1;
+}
+
+.Bar {
+  background-color: "#1B1C1E";
+}
+
+.MenuButton {
+  margin-right: 2;
+}
+
+.Button {
+  margin-right: 4;
+}
+
+.Title {
+  flex-grow: 1;
+}

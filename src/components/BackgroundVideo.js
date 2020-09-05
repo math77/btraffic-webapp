@@ -1,9 +1,21 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+
 import './BackgroundVideo.css';
 
-import video from '../assets/carrosnaestradanoite-hd.mp4';
+import video from '../assets/videos/video2.mp4';
+
+const useStyles = makeStyles((theme) => ({
+  title: {
+    flexGrow: 1,
+    marginTop: 90,
+  },
+}));
 
 function BackgroundVideo() {
+  const classes = useStyles();
+
   return (
     <div className="Container">
       <video autoPlay={true} loop={true} className="Video">
@@ -11,7 +23,9 @@ function BackgroundVideo() {
       </video>
       <div className="Content">
         <div className="SubContent" >
-          <h1>Dados colaborativos para transformar o transporte do amanhã.</h1>
+          <Typography variant="h2" className={classes.title}>
+            Algum texto que eu ainda preciso pensar sobre ele.
+          </Typography>
         </div>
       </div>
     </div>
