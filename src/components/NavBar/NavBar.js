@@ -31,13 +31,13 @@ export default function NavBar() {
 
   return (
     <div className="Root">
-      <AppBar position="fixed" className={classes.bar}>
+      <AppBar position="sticky" className={classes.bar}>
         <Toolbar>
           <Typography variant="h6" className="Title">
             Future Car
           </Typography>
-          <Button color="inherit" className="Button">Cadastro</Button>
           <Button color="inherit">Login</Button>
+          <Button color="inherit" className="Button">Cadastro</Button>
         </Toolbar>
       </AppBar>
     </div>
