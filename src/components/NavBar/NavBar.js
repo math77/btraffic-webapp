@@ -5,6 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom';
+
 import './NavBar.css';
 
 
@@ -24,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  txtBtn: {
+    color: '#FFFFFF',
+    textDecoration: 'none',
+  },
 }));
 
 export default function NavBar() {
@@ -36,8 +42,12 @@ export default function NavBar() {
           <Typography variant="h6" className="Title">
             Future Car
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit" className="Button">Cadastro</Button>
+          <Button color="inherit">
+            <Link to="/login" className={classes.txtBtn}>Login</Link>
+          </Button>
+          <Button color="inherit" className="Button">
+            <Link to="/register" className={classes.txtBtn}>Cadastro</Link>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
